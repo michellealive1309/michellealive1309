@@ -12,6 +12,13 @@ $(function() {
     })
     .setPin("#Pincontainer")
     .setTween(wipeAnimation)
-    .addIndicators()
     .addTo(controller);
 });
+
+var controller = new ScrollMagic.Controller();
+
+var tween = TweenMax.staggerFromTo(".stagger", 2, {left: 700}, {left: 0, ease: Back.easeOut}, 0.15);
+
+var scene = new ScrollMagic.Scene({triggerElement: "#triggerhome1", duration: 300})
+                                .setTween(tween)
+                                .addTo(controller);
