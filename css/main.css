@@ -15,7 +15,6 @@ html, body {
     height: 100%;
     width: 100%;
     position: absolute;
-    
 }
 #portipat {
     width: 100%;
@@ -23,7 +22,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #240229;
+    background: #000;
 }
 #portipat .content {
     position: relative;
@@ -67,15 +66,36 @@ html, body {
     left: 10px;
     right: 10px;
     bottom: 10px;
-    background: #240229;
+    background: #fff;
     border-radius: 50%;
 }
 .panel.home {
     background: url("../assets/bghome.jpg");
     background-size: cover;
     background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
 }
-.panel.home .wave {
+.snow {
+    background: url("../assets/snowfall.png");
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: anisnow 20s infinite linear; 
+}
+@keyframes anisnow {
+    0% {
+        background-position: 0px 0px
+    }
+    100% {
+        background-position: 100px 650px
+    }
+}
+.panel.about .wave {
     position: absolute;
     width: 100%;
     height: 143px;
@@ -84,7 +104,7 @@ html, body {
     background: url("../assets/wave.png");
     animation: wavebg 10s linear infinite;
 }
-.panel.home .wave:before {
+.panel.about .wave:before {
     content: "";
     width: 100%;
     height: 143px;
@@ -97,7 +117,7 @@ html, body {
     animation: wavebg 20s linear infinite;
 }
 
-.panel.home .wave:after {
+.panel.about .wave:after {
     content: "";
     width: 100%;
     height: 143px;
@@ -125,11 +145,14 @@ html, body {
     }
 }
 .panel.achieved {
-    background-color: azure;
+    background: url("../assets/p03xsw49.jpg");
+    background-size: cover;
 }
 .panel.about {
-    background-color: aqua;
+    background: url("../assets/waterbg.jpg");
+    background-size: cover;
 }
+
 h4 {
     font-family: sans-serif;
 }
@@ -198,7 +221,7 @@ h1.intro {
     font-size: 10em;
     text-transform: uppercase;
     color: #fff;
-    -webkit-text-stroke: 2px #fff;
+    -webkit-text-stroke: 0px #fff;
 }
 h1:before {
     content: attr(data-text);
