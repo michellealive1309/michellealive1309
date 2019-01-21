@@ -20,22 +20,109 @@ html, body {
 #portipat {
     width: 100%;
     height: 100vh;
-    position: relative;
-    background-image: url("../assets/background-hitam-abstrak-14.jpg");
-    background-size: cover;
-    background-color: #000;
-    background-attachment: fixed; 
-    text-align: center;
-    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #240229;
 }
 #portipat .content {
+    position: relative;
+    width: 826px;
+    height: 826px;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    animation: loadbg 0.5s linear infinite;
+}
+@keyframes loadbg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+#portipat .content span {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+}
+#portipat .content span:nth-child(1) {
+    filter: blur(5px);
+}
+#portipat .content span:nth-child(2) {
+    filter: blur(10px);
+}
+#portipat .content span:nth-child(3) {
+    filter: blur(25px);
+}
+#portipat .content span:nth-child(4) {
+    filter: blur(50px);
+}
+#portipat .content:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #240229;
+    border-radius: 50%;
 }
 .panel.home {
-    background-color: #485CB2;
+    background: url("../assets/bghome.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.panel.home .wave {
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background: url("../assets/wave.png");
+    animation: wavebg 10s linear infinite;
+}
+.panel.home .wave:before {
+    content: "";
+    width: 100%;
+    height: 143px;
+    background: url("../assets/wave.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    animation-delay: -5s;
+    animation: wavebg 20s linear infinite;
+}
+
+.panel.home .wave:after {
+    content: "";
+    width: 100%;
+    height: 143px;
+    background: url("../assets/wave.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    animation: wavebg-reverse 10s linear infinite;
+}
+@keyframes wavebg {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 1360px;
+    }
+}
+@keyframes wavebg-reverse {
+    0% {
+        background-position: 1360px;
+    }
+    100% {
+        background-position: 0;
+    }
 }
 .panel.achieved {
     background-color: azure;
