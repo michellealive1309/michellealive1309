@@ -1,0 +1,200 @@
+.name {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+/*Glowing Text*/
+h3 {
+    margin: 0;
+    padding: 0;
+    color: #111;
+    font-size: 8em;
+}
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+h3 span {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    font-family: "Coiny", cursive;
+    animation: animate 5.25s linear infinite;
+}
+h3 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h3 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+h3 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+h3 span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+h3 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+h3 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+h3 span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+h3 span:nth-child(8) {
+    animation-delay: 1.75s;
+}
+
+h3 span:nth-child(9) {
+    animation-delay: 2s;
+}
+
+h3 span:nth-child(10) {
+    animation-delay: 2.25s;
+}
+
+h3 span:nth-child(11) {
+    animation-delay: 2.5s;
+}
+
+h3 span:nth-child(12) {
+    animation-delay: 2.75s;
+}
+
+h3 span:nth-child(13) {
+    animation-delay: 3s;
+}
+
+h3 span:nth-child(14) {
+    animation-delay: 3.25s;
+}
+
+h3 span:nth-child(15) {
+    animation-delay: 3.5s;
+}
+h3 span:nth-child(16) {
+    animation-delay: 3.75s;
+}
+h3 span:nth-child(17) {
+    animation-delay: 4s;
+}
+h3 span:nth-child(18) {
+    animation-delay: 4.25s;
+}
+h3 span:nth-child(19) {
+    animation-delay: 4.5s;
+}
+h3 span:nth-child(20) {
+    animation-delay: 4.75s;
+}
+@keyframes animate {
+    0%, 100% {
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 2000px #00b3ff;
+    }
+    5%, 95% {
+        color: #fff;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
+/*Icon About Me*/
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ul li {
+    list-style: none;
+    margin: 0 50px;
+    width: 270px;
+}
+ul li div span {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-left: 75px;
+    line-height: 60px;
+    background: #000;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+}
+ul li div span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+ul li div span:hover:after{
+    transform: scale(1.5);
+    box-shadow: 0 0 15px #fff;
+}
+ul li div span:hover {
+    color: #fff;
+    box-shadow: 0 0 15px #fff;
+    text-shadow: 0 0 15px #fff;
+}
+ul li div {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+ul li div label {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    animation: shining 3s linear infinite;
+    background-size: 80%;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, .01);
+    opacity: 0;
+    transition: 1s;
+}
+@keyframes shining {
+    0% {
+        background-position: -400%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+ul li div:before label {
+    opacity: 0;
+    transition: 1s;
+}
+ul li div:hover:after label {
+    opacity: 1;
+}
+ul li div:hover label {
+    opacity: 1;
+}
