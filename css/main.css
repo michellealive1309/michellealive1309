@@ -148,6 +148,12 @@ html, body {
 }
 /*Achieved Page*/
 .panel.achieved {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background: url("../assets/p03xsw49.jpg");
     background-size: cover;
 }
