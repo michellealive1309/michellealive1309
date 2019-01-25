@@ -227,7 +227,7 @@ ul li div:hover label {
     transition-property: transform, z-index, left;
     transition-delay: 0s, .5s, 0.5s;
     transition-duration: .5s, 0s, .5s;
-    transform: translate(170px, -10px);
+    transform: translate(270px, -10px);
     z-index: 1;
     left: -160px;
 }
@@ -247,7 +247,7 @@ ul li div:hover label {
     transition-property: transform, z-index, left;
     transition-delay: 0s, .5s, 0.5s;
     transition-duration: .5s, 0s, .5s;
-    transform: translate(-500px, -10px);
+    transform: translate(-420px, -10px);
     z-index: 2;
     left: 450px;
 }
