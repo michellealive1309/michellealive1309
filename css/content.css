@@ -110,7 +110,7 @@ h3 span:nth-child(20) {
     }
 }
 /*Icon About Me*/
-ul {
+.piticon ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -119,12 +119,12 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-ul li {
+.piticon ul li {
     list-style: none;
     margin: 0 50px;
     width: 270px;
 }
-ul li div span {
+.piticon ul li div span {
     position: relative;
     display: block;
     width: 60px;
@@ -137,7 +137,7 @@ ul li div span {
     color: #666;
     transition: .5s;
 }
-ul li div span:before {
+.piticon ul li div span:before {
     content: '';
     position: absolute;
     top: 0;
@@ -150,21 +150,21 @@ ul li div span:before {
     transform: scale(.9);
     z-index: -1;
 }
-ul li div span:hover:after{
+.piticon ul li div span:hover:after{
     transform: scale(1.5);
     box-shadow: 0 0 15px #fff;
 }
-ul li div span:hover {
+.piticon ul li div span:hover {
     color: #fff;
     box-shadow: 0 0 15px #fff;
     text-shadow: 0 0 15px #fff;
 }
-ul li div {
+.piticon ul li div {
     margin: 0;
     padding: 0;
 }
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
-ul li div label {
+.piticon ul li div label {
     margin: 0;
     padding: 0;
     position: relative;
@@ -188,20 +188,22 @@ ul li div label {
         background-position: 400%;
     }
 }
-ul li div:before label {
+.piticon ul li div:before label {
     opacity: 0;
     transition: 1s;
 }
-ul li div:hover:after label {
+.piticon ul li div:hover:after label {
     opacity: 1;
 }
-ul li div:hover label {
+.piticon ul li div:hover label {
     opacity: 1;
 }
 .cerdetail {
     position: relative;
     width: 550px;
     height: 550px;
+    top: 0%;
+    left: -10%;
     margin: 0;
     padding: 0;
 }
@@ -260,4 +262,37 @@ ul li div:hover label {
     margin: 10px 0 0;
     padding: 0;
     color: #fff;
+}
+.cerinfo {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-items: left;
+    color: #fff;
+    width: 500px;
+    height: 400px;
+    top: 0%;
+    left: 5%;
+    border-style: solid;
+}
+.cerinfo h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    color: #fff;
+}
+.cerinfo span {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+}
+.cerinfo span ul {
+    margin: 0;
+    padding: 0 59px;
+}
+.cerinfo span ul li {
+    margin: 0;
+    padding: 0;
+    list-style: disc;
 }

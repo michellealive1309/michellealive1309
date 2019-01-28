@@ -24,6 +24,7 @@ html, body {
     justify-content: center;
     align-items: center;
     background: #000;
+    overflow: hidden;
 }
 .content {
     position: relative;
@@ -150,6 +151,7 @@ html, body {
 .panel.achieved {
     margin: 0;
     padding: 0;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
