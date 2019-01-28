@@ -178,7 +178,7 @@ h1.intro {
     color: #fff;
     -webkit-text-stroke: 0px #fff;
 }
-h1:before {
+h1.intro:before {
     content: attr(data-text);
     position: absolute;
     background: linear-gradient(90deg, #d630f2, #ff002f, #e4ff00, #03a9f4, #d630f2);
@@ -190,7 +190,7 @@ h1:before {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-h1:hover:before {
+h1.intro:hover:before {
     width: 100%;
 }
 @keyframes animate2 {
