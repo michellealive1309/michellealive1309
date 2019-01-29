@@ -480,14 +480,8 @@ h3 span:nth-child(20) {
     font-size: 28px;
     transition: 0.5s;
 }
-.contact2 .contactbox .contacticon .fab {
-    padding-right: 10px;
-    transition: 0.5s;
-}
-.contact2 .contactbox .contacticon .fas {
-    padding-right: 10px;
-    transition: 0.5s;
-}
+.contact2 .contactbox .contacticon .fab,
+.contact2 .contactbox .contacticon .fas,
 .contact2 .contactbox .contacticon .far {
     padding-right: 10px;
     transition: 0.5s;
