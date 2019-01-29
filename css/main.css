@@ -187,7 +187,7 @@ h1.intro:before {
     transition: width 2s;
     animation: animate2 5s linear infinite;
     width: 0;
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 h1.intro:hover:before {
