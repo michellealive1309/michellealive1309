@@ -175,6 +175,9 @@ h3 span:nth-child(20) {
     background: linear-gradient(90deg, #000, #fff, #000);
     animation: shining 3s linear infinite;
     background-size: 80%;
+    background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: rgba(255, 255, 255, .01);
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, .01);
     opacity: 0;
@@ -437,6 +440,8 @@ h3 span:nth-child(20) {
     transform: rotateX(180deg);
     line-height: 0.865em;
     background: linear-gradient(0deg, #fff 0, transparent 80%);
+    background-clip: text;
+    -moz-background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     opacity: 0.5;

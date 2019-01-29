@@ -176,6 +176,7 @@ h1.intro {
     font-size: 10em;
     text-transform: uppercase;
     color: #fff;
+    -moz-text-stroke: 0px #fff;
     -webkit-text-stroke: 0px #fff;
 }
 h1.intro:before {
@@ -187,6 +188,9 @@ h1.intro:before {
     transition: width 2s;
     animation: animate2 5s linear infinite;
     width: 0;
+    background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
