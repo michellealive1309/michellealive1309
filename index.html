@@ -5,181 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script type="text/javascript" src="/WebPortfolio/node_modules/jquery/dist/jquery.min.js"></script>
+    <title>Portipat</title>
+  </head>
+  <body>
+        <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light offset fixed-top">
+                  <div class="container">
+                        <a class="navbar-brand" href="#home">Portipat!</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav ml-lg-auto">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#achievement">Achievement</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                          </ul>
+                        </div>
+                  </div>
+                </nav>
+        </header>
+        <div class="jumbotron jumbotron-fluid banner" id="home">
+            <div class="container">
+              <div class="contentBox my-5">
+                <div class="row my-5">
+                  <div class="profilePicture col-sm-4">
+                      <img src="profilepic.jpg" class="img-thumbnail rounded-pill">
+                  </div>
+                  <div class="lightNeon col-sm-5 col-12 sm-text-center">
+                    <div class="myProfile my-5">
+                      <h1>Pitipat Piphatpakorn</h1>
+                      <h3>Computer Science</h3>
+                      <h5>Funny, Introvert, Positive Thinking</h5>
+                      <h6>Since 1997.</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center row my-5">
+                  <div class="col-sm-4">
+                    <button type="button" class="myDetail btn-lg my-5" data-aos="fade-right" data-aos-duration="1500" disabled>Game Player</button>
+                  </div>
+                  <div class="col-sm-4">
+                    <button type="button" class="myDetail btn-lg my-5" data-aos="zoom-in" data-aos-duration="1500" disabled>3rd Year CS RMUTK</button>
+                  </div>
+                  <div class="col-sm-4">
+                    <button type="button" class="myDetail btn-lg my-5" data-aos="fade-left" data-aos-duration="1500" disabled>Single</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header container-fluid text-center my-3" id="achievement" style="font-size: 3em;">ACHIEVEMENT</div>
+        <section class="sec1">
+          <div class="container my-5 py-5">
+              <div class="row">
+                  <div class="col-sm-5 my-5">
+                    <div class="placeBox text-center">
+                        <div class="imgBox1" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
+                          <img src="certificate.JPG" class="img-fluid">
+                        </div>
+                        <h3 class="cerDetail my-3" data-aos="fade-up"  style="color: #000;" data-aos-duration="1500">OCA Java SE8 (IZ0-808)</h3>
+                    </div>
+                  </div>
+                  <div class="col-sm-5 my-5 offset-sm-2">
+                      <div class="placeBox text-center">
+                          <div class="imgBox2" data-aos="flip-left"
+                          data-aos-easing="ease-out-cubic"
+                          data-aos-duration="2000">
+                            <img src="certificate2.JPG" class="img-fluid">
+                          </div>
+                          <h3 class="cerDetail my-3" data-aos="fade-up" style="color: #000;" data-aos-duration="1500">Database Administration Fundamentals</h3>
+                      </div>
+                    </div>
+                </div>
+          </div>
+        </section>
+        <div class="header container-fluid text-center my-3" id="contact" style="font-size: 3em;">CONTACT</div>
+        <section class="container-fluid sec2">
+          <div class="row contactInfo mt-5">
+            <div class="contactBox col-sm-4 col-12">
+              <div class="contactIcon">
+                <i class="fab fa-facebook-square"></i>
+                Facebook
+              </div>
+              <div class="contactDetail">
+                <a href="https://www.facebook.com/profile.php?id=100012992388958">ชิเคติปิ ไปต่อสู้</a>
+              </div>
+            </div>
+            <div class="contactBox col-sm-4 col-12">
+              <div class="contactIcon">
+                <i class="fas fa-phone"></i>
+                Phone
+              </div>
+              <div class="contactDetail">
+                  <span>+66 90 294 7448</span>
+              </div>
+            </div>
+            <div class="contactBox col-sm-4 col-12">
+              <div class="contactIcon">
+                <i class="far fa-envelope"></i>
+                Email
+              </div>
+              <div class="contactDetail">
+                <span>michellealive1309@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </section>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="javascript/main.js"></script>
-    <script src="javascript/content.js"></script>
-    <title>Portipat!</title>
-  </head>
-  <body>
-    <div id="portipat">
-      <div class="content">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <h1 class="intro" data-text="Portipat!">Portipat!</h1>
-    </div>
-    <div id="Pincontainer">
-      <section id="home" class="panel home">
-        <div class="name">
-          <h3>
-            <span>P</span>
-            <span>i</span>
-            <span>t</span>
-            <span>i</span>
-            <span>p</span>
-            <span>a</span>
-            <span>t</span>
-            <span style="opacity: 0;">_</span>
-            <span>P</span>
-            <span>i</span>
-            <span>p</span>
-            <span>h</span>
-            <span>a</span>
-            <span>t</span>
-            <span>p</span>
-            <span>a</span>
-            <span>k</span>
-            <span>o</span>
-            <span>r</span>
-            <span>n</span>
-          </h3>
-        </div>
-        <div class="piticon">
-          <ul>
-            <li>
-              <div class="describe col-12 text-center">
-                <span>
-                  <i class="fas fa-utensils" aria-hidden="true"></i>
-                </span>
-                <label class="icondesc">Love Eating</label>
-              </div>
-            </li>
-            <li>
-              <div class="describe col-12 text-center">
-                <span>
-                  <i class="fas fa-gamepad" aria-hidden="true"></i>
-                </span>
-                <label class="icondesc">Like Playing</label>
-              </div>
-            </li>
-            <li>
-              <div class="describe col-12 text-center">
-                <span>
-                  <i class="fab fa-java" aria-hidden="true"></i>
-                </span>
-                <label class="icondesc">Know JAVA</label>
-              </div>
-            </li>
-            <li>
-              <div class="describe col-12 text-center">
-                <span>
-                  <i class="fas fa-home" aria-hidden="true"></i>
-                </span>
-                <label class="icondesc">Home Favor</label>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="panel achieved">
-        <div class="cerdetail">
-          <div class="face face1">
-            <img class="img-fluid" src="certificate.JPG">
-          </div>
-          <div class="face face2">
-            <div class="cercontent">
-              <h2>Oracle Certification Assoiated <br> JAVA SE 8 Programmer I (IZ0-808)</h2>
-            </div>
-          </div>
-        </div>
-        <div class="cerinfo">
-          <h3 data-text="Exam Result" id="show1">Exam Result</h3>
-          <span data-text="Exam takes on 12 July 2018" id="show1">Exam takes on 12 July 2018</span><br>
-          <span data-text="Score 84%" id="show1">Score 84%</span><br>
-          <span data-text="Pass 65%" id="show1">Pass 65%</span><br>
-          <span data-text="10 Objectives mistake" id="show1">10 Objectives mistake such as
-            <ul>
-              <li>
-                  Switch statement
-              </li>
-              <li>
-                  Break and continue
-              </li>
-              <li>
-                  Do/While loops
-              </li>
-              <li>
-                  Static keyword
-              </li>
-              <li>
-                  Define a structure of a JAVA class
-              </li>
-            </ul>
-          </span>
-        </div>
-      </section>
-      <section class="panel about">
-        <div class="bowl">
-          <div class="water">
-            <img src="fish.png" class="fish">
-          </div>
-        </div>
-        <div class="shadow"></div>
-        <div class="contact1">
-          <h1 data-text="Contact" class="contactus">Contact</h1>
-        </div>
-        <div class="contact2">
-          <div class="contactbox">
-            <div class="contacticon">
-                <i class="fab fa-facebook-square"></i>
-                Facebook
-            </div>
-            <div class="contactdetail">
-              <a href="https://www.facebook.com/profile.php?id=100012992388958">ชิเคติปิ ไปต่อสู้</a>
-            </div>
-          </div>
-          <div class="contactbox">
-              <div class="contacticon">
-                  <i class="fas fa-phone"></i>
-                  Phone
-              </div>
-              <div class="contactdetail">
-                <span>+66 90 294 7448</span>
-              </div>
-            </div>
-          <div class="contactbox">
-              <div class="contacticon">
-                  <i class="far fa-envelope"></i>
-                  Email
-              </div>
-              <div class="contactdetail">
-                <span>michellealive1309@gmail.com</span>
-              </div>
-            </div>
-        </div>
-          <div class="wave"></div>
-      </section>
-    </div>
-
-    
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>
