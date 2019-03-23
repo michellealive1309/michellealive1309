@@ -30,7 +30,7 @@ body {
                 0 0 25px rgba(250, 112, 31, 1),
                 0 0 30px rgba(250, 112, 31, 1),
                 0 0 35px rgba(250, 112, 31, 1);
-    transition: 1s;
+    transition: 1s !important;
 }
 .myDetail:hover {
     box-shadow: 0 0 30px rgba(250, 112, 31, .1),
