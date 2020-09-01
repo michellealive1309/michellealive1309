@@ -69,6 +69,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    word-break: break-word;
 }
 .port-container img {
     
@@ -277,6 +278,7 @@ body {
     color: #fff;
     border: 0px;
     font-weight: 800;
+    z-index: 1;
 }
 .port-btn-contact button:focus {
     outline: 0;
